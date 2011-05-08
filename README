@@ -1,1 +1,7 @@
-This file was created by IntelliJ IDEA 10.0.2 for binding GitHub repository
+A Grails custom tag that will render a JQuery UI DatePicker component and will bind that to a date field in your domain class when you hit submit on the form
+
+What the jQuery DatePicker grails tag does:
+
+    1. It creates three hidden input fields dateField_day, dateField_month, dateField_year.
+    2. It’s responsible for populating these hidden input fields when a date has been selected from the calendar.
+    3. Supports having multiple date fields in the same form without any conflict.
