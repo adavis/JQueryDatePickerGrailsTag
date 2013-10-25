@@ -15,11 +15,11 @@ class jqueryDatePickerTagLib {
 	 
 		//Code to parse selected date into hidden fields required by grails
 		out.println "<script type=\"text/javascript\"> \$(document).ready(function(){"
-		out.println "\$(\"#${name}\").datepicker({"
+		out.println "\$(\"input[name='${name}']\").datepicker({"
 		out.println "onClose: function(dateText, inst) {"
-		out.println "\$(\"#${name}_month\").attr(\"value\",new Date(dateText).getMonth() +1);"
-		out.println "\$(\"#${name}_day\").attr(\"value\",new Date(dateText).getDate());"
-		out.println "\$(\"#${name}_year\").attr(\"value\",new Date(dateText).getFullYear());"
+		out.println "\$(\"input[name='${name}_month']\").attr(\"value\",new Date(dateText).getMonth() +1);"
+		out.println "\$(\"input[name='${name}_day']\").attr(\"value\",new Date(dateText).getDate());"
+		out.println "\$(\"input[name='${name}_year']\").attr(\"value\",new Date(dateText).getFullYear());"
 		out.println "}"
 		
 		//If you want to customize using the jQuery UI events add an if block an attribute as follows
